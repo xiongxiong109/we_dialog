@@ -1,0 +1,84 @@
+* {margin: 0;padding: 0;}
+html, body {
+	height: 100%;
+	background-color: #efefef;
+}
+body {
+	width: 100%;
+	overflow-x: hidden;
+	font-family: monaco, "Microsofe Yahei";
+}
+
+.content-wrap {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.dialog-box {
+	padding: 0 10px;
+	margin-bottom: 10px;
+	min-height: 40px;
+	overflow: hidden;
+}
+
+/*大字*/
+.title-box {
+	width: 100%;
+	height: 90%;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 40px;
+	background-color: #5D5555;
+	background-image: linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+}
+
+.pop {
+	padding: 10px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	color: #555;
+	-webkit-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+.pop.animated {
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+}
+.pop.pop-started {
+	-webkit-transition: border-radius .3s, background-color .3s;
+	transition: border-radius .3s, background-color .3s;
+}
+.pop.pop-r, .pop.pop-started {
+	border-radius: 10px 10px 0px 10px;
+	background-color: #6DCA6D;
+}
+.pop.pop-r {
+	float: right;
+	-webkit-transform-origin: right bottom;
+	transform-origin: right bottom;
+}
+
+.pop.pop-l {
+	float: left;
+	border-radius: 10px 10px 10px 0;
+	background-color: #eee;
+	-webkit-transform-origin: left bottom;
+	transform-origin: left bottom;
+}
+
+.pop.pop-readed {
+	background-color: #ccc;
+	color: #fff;
+}
+
+.pop.pop-block {
+	display: block;
+	border-radius: 4px;
+}
